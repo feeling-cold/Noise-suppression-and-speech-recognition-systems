@@ -53,8 +53,11 @@ FFT降噪过程：
 在语音合成系统中。我们使用了pyttsx3语料库来对文字类型的输入进行处理得到音频文件。在这个库中，定义了两个函数ttsSpeak函数和ttsSaveToFile函数。其中ttsSpeak的方法将文字朗读，而ttsSaveToFile中的方法将输入的文字转换成音频文件并保存。
 2、语音识别技术原理
  **本次实现语音识别依靠开源框架ASRT** 
- **原项目地址https://gitee.com/ailemon/ASRT_SpeechRecognition?_from=gitee_search** 
+ 
+**原项目地址https://gitee.com/ailemon/ASRT_SpeechRecognition?_from=gitee_search** 
+
  **希望大家可以为原作者点star** 
+
 语音识别技术设计中通过使用ASRT接口。ASRT语音识别系统在声学特征的提取上，使用的既不是大家所熟知的MFCC算法，也不是FBank(或LogFBank)算法，而是一种语谱图特征。
 语谱图特征是有别于mfcc和logfBank特征的另一种声学特征，与其说是提取特征，不如说是仅仅对声音信号进行预处理。传统的MFCC特征、fBank和logfBank等特征在傅里叶变换后，都存在各种类型人工设计的滤波器，如Mel滤波器。这些基于人工特征算法的语音特征提取，会造成频域中的语音信号，尤其是高频区域的信号，其声音信息的损失会比较大。而那些传统语音特征提取算法，在时域上还存在着非常大的时间窗偏移，其目的是用来降低运算量，所以也会导致声音信息的损失问题，尤其是说话人语速较快时。
 3、FFT降噪技术原理
