@@ -2,6 +2,7 @@
 ASRT 项目地址 ：https://gitee.com/ailemon/ASRT_SpeechRecognition?_from=gitee_search
 希望大家可以向ASRT作者点star** 
 
+ 只需将项目git至本地，运行ASRT文件下的GUI.py即可
  
 以下为系统说明书
 一、系统设计目标
